@@ -5,4 +5,4 @@ Nookipedia API Tools
 ---
 A simple wrapper for Nookipedia API
 
-Please read perl-Nookipedia/README for installation and more details.
+Please read **perl-Nookipedia/Nookipedia/README** for installation and more details.
