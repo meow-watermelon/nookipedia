@@ -110,7 +110,7 @@ version 0.0.1
 
 =head1 DESCRIPTION
 
-Nookipedia is a small and simple wrapper to access Nookipedia API endpoints. For each subroutine it returns a scalar reference. If the module cannot get the data from the vendor API server, it returns an empty hash reference.
+Nookipedia is a small and simple wrapper to access Nookipedia API endpoints. For each subroutine it returns a hash reference. If the module cannot get the data from the vendor API server, it returns an empty hash reference.
 
 =head1 EXPORT
 
@@ -126,27 +126,27 @@ Nothing is exported by default. You can ask for specific subroutines (described 
 
 =head2 get_today($apikey)
 
-Return a scalar reference from the /today endpoint. Date option is not supported yet.
+Return a hash reference from the /today endpoint. Date option is not supported yet.
 
 =head2 get_villager($apikey)
 
-Return a scalar reference from the /villager endpoint. This subroutine only returns the villagers list with Wiki/API URLs.
+Return a hash reference from the /villager endpoint. This subroutine only returns the villagers list with Wiki/API URLs.
 
 =head2 get_villager_all($apikey)
 
-Return a detailed listing-all scalar reference from the /villager/all endpoint. If you would like to get the details of all villagers in one reference, this would be the best approach.
+Return a detailed listing-all hash reference from the /villager/all endpoint. If you would like to get the details of all villagers in one reference, this would be the best approach.
 
 =head2 get_villager_detail($apikey, $name)
 
-Return a detailed scalar reference for a specific villager from the /villager/$name endpoint.
+Return a detailed hash reference for a specific villager from the /villager/$name endpoint.
 
 =head2 get_fossil($apikey)
 
-Return a scalar reference from the /fossil endpoint. This subroutine only returns the fossils list with Wiki/API URLs.
+Return a hash reference from the /fossil endpoint. This subroutine only returns the fossils list with Wiki/API URLs.
 
 =head2 get_fossil_detail($apikey, name)
 
-Return a detailed scalar reference for a specific fossil from the /fossil/$name endpoint.
+Return a detailed hash reference for a specific fossil from the /fossil/$name endpoint.
 
 =head1 BUGS
 
